@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Sections - Controle Interne</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="login-body">
+  <div class="login-screen">
+    <div class="sections-card">
+      <div class="login-brand" id="login-brand">
+        <img src="static/img/logo-totalenergies.png" alt="TotalEnergies" class="login-logo"
+             onerror="document.getElementById('login-brand').classList.add('logo-missing')">
+        <div class="login-brand-fallback">TotalEnergies</div>
+      </div>
+      <p class="login-tagline" id="login-tagline">Controle Interne</p>
+
+      <h1 class="sections-title">Choisir une section</h1>
+      <p class="muted sections-subtitle">Connecte en tant que <strong id="who-name">...</strong></p>
+
+      <div class="sections-grid">
+        <a class="section-card" href="alc/index.html">
+          <div class="section-card-code">ALC</div>
+          <div class="section-card-name">Application Level Controls</div>
+        </a>
+        <a class="section-card" href="ipe/index.html">
+          <div class="section-card-code">IPE</div>
+          <div class="section-card-name">Information Produced by the Entity</div>
+        </a>
+        <a class="section-card section-card-active" href="index.html">
+          <div class="section-card-code">CM</div>
+          <div class="section-card-name">Controles Mensuels</div>
+        </a>
+        <a class="section-card" href="elc/index.html">
+          <div class="section-card-code">ELC</div>
+          <div class="section-card-name">Entity Level Controls</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/api.js"></script>
+  <script src="static/js/common.js"></script>
+  <script>
+    Api.get("/api/whoami").then(who => {
+      document.getElementById("who-name").textContent = who.display_name || "Utilisateur";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "columns": [
+    {
+      "key": "etape",
+      "label": "Etape"
+    },
+    {
+      "key": "action",
+      "label": "Action"
+    },
+    {
+      "key": "mode_operatoire",
+      "label": "Mode operatoire"
+    },
+    {
+      "key": "statut",
+      "label": "Statut"
+    },
+    {
+      "key": "date",
+      "label": "Date"
+    },
+    {
+      "key": "contact",
+      "label": "Contact"
+    }
+  ],
+  "steps": [
+    {
+      "etape": "1",
+      "action": "Extraction des donnees",
+      "mode_operatoire": "Lancer l'extraction depuis le systeme source (rapport Counterparty Overdraft Limits + Power BI)",
+      "statut": "-",
+      "date": "",
+      "contact": "Equipe BO"
+    },
+    {
+      "etape": "2",
+      "action": "Chargement SOX+",
+      "mode_operatoire": "Charger le fichier ZIP dans SOX+ : l'outil genere automatiquement 2 dates aleatoires",
+      "statut": "-",
+      "date": "",
+      "contact": "SOX+"
+    },
+    {
+      "etape": "3",
+      "action": "Envoi mail demande",
+      "mode_operatoire": "Mail auto SOX+ ou rediger manuellement la demande de justificatifs pour les 2 dates",
+      "statut": "-",
+      "date": "",
+      "contact": "Metier"
+    },
+    {
+      "etape": "4",
+      "action": "Analyse overdraft quotidien",
+      "mode_operatoire": "Verifier le montant overdraft quotidien pour chaque date selectionnee",
+      "statut": "-",
+      "date": "",
+      "contact": "Arthur (BO)"
+    },
+    {
+      "etape": "5",
+      "action": "Verification Power BI",
+      "mode_operatoire": "Valider rapport Power BI : commentaires presents, depassements justifies, signatures",
+      "statut": "-",
+      "date": "",
+      "contact": "Arthur (BO)"
+    },
+    {
+      "etape": "6",
+      "action": "Verification EoD",
+      "mode_operatoire": "S'assurer que tout est integre dans le process de fin de journee (End of Day)",
+      "statut": "-",
+      "date": "",
+      "contact": "Equipe BO"
+    },
+    {
+      "etape": "7",
+      "action": "Reprise modele",
+      "mode_operatoire": "Reprendre le modele de controle du mois precedent : verifier dates, montants > 1M EUR commentes",
+      "statut": "-",
+      "date": "",
+      "contact": "Controleur"
+    },
+    {
+      "etape": "8",
+      "action": "Reception reponse",
+      "mode_operatoire": "Attendre la reponse metier avec justificatifs complets",
+      "statut": "-",
+      "date": "",
+      "contact": "Arthur (BO)"
+    },
+    {
+      "etape": "9",
+      "action": "Signature et depot",
+      "mode_operatoire": "Signer le document final et deposer dans SharePoint controle",
+      "statut": "-",
+      "date": "",
+      "contact": "Controleur"
+    }
+  ]
+}

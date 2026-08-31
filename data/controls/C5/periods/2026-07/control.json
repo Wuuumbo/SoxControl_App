@@ -1,0 +1,59 @@
+{
+  "date_test": "2026-08-17",
+  "nb_echantillons": 2,
+  "echantillons": [
+    {
+      "row": {
+        "deal_no": 5977516,
+        "ticket_number": "TE EP RATAWI HUB IRAQI BRANCHGB50CHAS60924280034338CHASGB2L",
+        "themis_ref": 361189,
+        "internal_total_affiliate": "TE EP RATAWI HUB IRAQI BRANCH",
+        "counterparty": "TE EP RATAWI HUB IRAQI BRANCH",
+        "country_of_payment": "GB",
+        "beneficiary_bank_bic": "CHASGB2L",
+        "beneficiary_bank_name": "NA",
+        "intermediary_bic": null,
+        "value_date": "2026-08-07",
+        "ccy": "USD",
+        "amount": -53618400,
+        "comments": "Cash Call JV TEEPRH No202607August|2026"
+      },
+      "resultat": "A tester",
+      "commentaire": ""
+    },
+    {
+      "row": {
+        "deal_no": 5908739,
+        "ticket_number": "TOTSA TotalEnergies Trading SAGB10CHAS60924280034670CHASGB2L",
+        "themis_ref": "I0000092120384",
+        "internal_total_affiliate": "TOTSA TOTALENERGIES PRODUCTS",
+        "counterparty": "TOTSA TotalEnergies Trading SA",
+        "country_of_payment": "GB",
+        "beneficiary_bank_bic": "CHASGB2L",
+        "beneficiary_bank_name": "NA",
+        "intermediary_bic": null,
+        "value_date": "2026-07-07",
+        "ccy": "AED",
+        "amount": -2000,
+        "comments": null
+      },
+      "resultat": "A tester",
+      "commentaire": ""
+    }
+  ],
+  "conclusion": "",
+  "observations": "",
+  "realized_by": {
+    "display_name": "Florentin GAUGRY",
+    "username": "J1187548",
+    "computer": "FR-LC2MPJ84",
+    "at": "2026-08-28T13:45:33"
+  },
+  "validated_by": {
+    "display_name": "Florentin GAUGRY",
+    "username": "J1187548",
+    "computer": "FR-LC2MPJ84",
+    "at": "2026-08-28T13:22:32"
+  },
+  "statut_override": "OK"
+}

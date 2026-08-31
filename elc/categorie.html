@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>ELC - Bloc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main-col">
+      <header class="topheader" id="topheader"></header>
+
+      <main class="page-content page-content-wide">
+        <div class="page-head">
+          <h1 id="cat-title">Bloc</h1>
+          <p class="muted" id="cat-stats"></p>
+        </div>
+
+        <div class="panel">
+          <div class="toolbar">
+            <button class="btn secondary small" id="add-row-btn">+ Ligne</button>
+            <button class="btn secondary small" id="del-row-btn">- Ligne</button>
+            <button class="btn secondary small" id="add-col-btn">+ Colonne</button>
+            <button class="btn secondary small" id="del-col-btn">- Colonne</button>
+            <button class="btn secondary small" id="rename-cat-btn">Renommer le bloc</button>
+            <div class="spacer"></div>
+            <div id="save-indicator" class="save-indicator"><span class="dot"></span> A jour</div>
+          </div>
+          <div class="elc-scrollbar-top" id="elc-scrollbar-top"><div id="elc-scrollbar-top-inner"></div></div>
+          <div class="elc-table-wrap" id="elc-table-wrap">
+            <table class="elc-table elc-table-resizable">
+              <thead id="elc-thead"></thead>
+              <tbody id="elc-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../static/js/api.js"></script>
+  <script src="../static/js/common.js"></script>
+  <script src="../static/js/elc-layout.js"></script>
+  <script src="../static/js/elc-common.js"></script>
+  <script src="../static/js/elc-categorie.js"></script>
+</body>
+</html>

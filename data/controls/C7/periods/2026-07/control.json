@@ -1,0 +1,15 @@
+{
+  "date_test": "",
+  "nb_echantillons": 2,
+  "echantillons": [],
+  "conclusion": "",
+  "observations": "",
+  "realized_by": null,
+  "validated_by": {
+    "display_name": "Florentin GAUGRY",
+    "username": "J1187548",
+    "computer": "FR-LC2MPJ84",
+    "at": "2026-08-28T17:04:44"
+  },
+  "statut_override": "OK"
+}

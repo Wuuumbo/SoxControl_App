@@ -1,0 +1,70 @@
+{
+  "columns": [
+    {
+      "key": "etape",
+      "label": "Etape"
+    },
+    {
+      "key": "action",
+      "label": "Action"
+    },
+    {
+      "key": "mode_operatoire",
+      "label": "Mode operatoire"
+    },
+    {
+      "key": "statut",
+      "label": "Statut"
+    },
+    {
+      "key": "date",
+      "label": "Date"
+    },
+    {
+      "key": "contact",
+      "label": "Contact"
+    },
+    {
+      "key": "col_1787910573718",
+      "label": "Commentaires"
+    }
+  ],
+  "steps": [
+    {
+      "etape": "1",
+      "action": "Extraction des donnees",
+      "mode_operatoire": "",
+      "statut": "-",
+      "date": "",
+      "contact": "dzqdz",
+      "col_1787910573718": ""
+    },
+    {
+      "etape": "2",
+      "action": "Tirage des echantillons",
+      "mode_operatoire": "",
+      "statut": "-",
+      "date": "",
+      "contact": "",
+      "col_1787910573718": ""
+    },
+    {
+      "etape": "3",
+      "action": "Analyse des echantillons",
+      "mode_operatoire": "",
+      "statut": "-",
+      "date": "",
+      "contact": "",
+      "col_1787910573718": ""
+    },
+    {
+      "etape": "4",
+      "action": "Conclusion et signature",
+      "mode_operatoire": "",
+      "statut": "-",
+      "date": "",
+      "contact": "",
+      "col_1787910573718": ""
+    }
+  ]
+}

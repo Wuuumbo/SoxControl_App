@@ -1,0 +1,53 @@
+{
+  "date_test": "2026-08-17",
+  "nb_echantillons": 2,
+  "echantillons": [
+    {
+      "row": {
+        "id": "OD-022",
+        "date_rapport": "2026-07-17",
+        "run_for_date": "2026-07-16",
+        "affiliate": "TotalEnergies Petrochemicals",
+        "devise": "GBP",
+        "limite_od": 87.5,
+        "utilisation": 1.2,
+        "depassement": "NON",
+        "commentaire_eod": "RAS",
+        "valide_powerbi": "OUI"
+      },
+      "resultat": "A tester",
+      "commentaire": ""
+    },
+    {
+      "row": {
+        "id": "OD-033",
+        "date_rapport": "2026-07-13",
+        "run_for_date": "2026-07-12",
+        "affiliate": "TotalEnergies SE Nigeria",
+        "devise": "GBP",
+        "limite_od": 43.6,
+        "utilisation": 43.2,
+        "depassement": "NON",
+        "commentaire_eod": "RAS",
+        "valide_powerbi": "NON"
+      },
+      "resultat": "A tester",
+      "commentaire": ""
+    }
+  ],
+  "conclusion": "",
+  "observations": "",
+  "realized_by": {
+    "display_name": "Florentin GAUGRY",
+    "username": "J1187548",
+    "computer": "FR-LC2MPJ84",
+    "at": "2026-08-28T17:04:39"
+  },
+  "validated_by": {
+    "display_name": "Florentin GAUGRY",
+    "username": "J1187548",
+    "computer": "FR-LC2MPJ84",
+    "at": "2026-08-28T17:04:38"
+  },
+  "statut_override": "OK"
+}

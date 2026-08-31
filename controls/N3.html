@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>N3 - Overdrafts Follow-up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body data-ref="N3">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main-col">
+      <header class="topheader" id="topheader"></header>
+
+      <main class="page-content">
+        <div class="page-head">
+          <h1 id="control-title">N3 - Overdrafts Follow-up</h1>
+          <p class="muted" id="control-desc"></p>
+        </div>
+
+        <div id="period-missing" class="panel hidden">
+          <p>Cette periode n'existe pas encore pour ce controle.</p>
+          <button class="btn" id="create-period-here-btn">Creer cette periode</button>
+        </div>
+
+        <div id="main-tabs">
+          <div class="panel status-bar">
+            <div class="status-bar-left">
+              <div>Statut : <span id="status-badge" class="badge dash">-</span></div>
+              <div class="muted">Conformite : <span id="nb-conformes">0/0</span> (<span id="taux-conformite">-</span>)</div>
+            </div>
+            <div class="status-bar-right">
+              <div id="save-indicator" class="save-indicator"><span class="dot"></span> A jour</div>
+              <button class="btn" id="save-now-btn">Enregistrer</button>
+            </div>
+          </div>
+
+          <div class="tabs">
+        <button class="tab-btn active" data-tab="info">Informations &amp; conclusion</button>
+        <button class="tab-btn" data-tab="data">Donnees brutes</button>
+        <button class="tab-btn" data-tab="procedure">Procedure</button>
+        <button class="tab-btn" data-tab="sampling">Echantillons</button>
+        <button class="tab-btn" data-tab="contacts">Contacts &amp; mails types</button>
+        <button class="tab-btn" data-tab="history">Historique</button>
+      </div>
+
+      <div id="tab-info" class="tab-panel active">
+        <div class="panel">
+          <h2>Informations du controle</h2>
+          <div class="field-grid">
+            <div class="field-row"><label>Date du test</label><input type="date" id="f-date-test"></div>
+            <div class="field-row"><label>Nb echantillons</label><input type="number" min="1" id="f-nb-echantillons"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Conclusion</h2>
+          <div class="field-row"><label>Conclusion</label><textarea id="f-conclusion"></textarea></div>
+          <div class="field-row"><label>Observations</label><textarea id="f-observations"></textarea></div>
+        </div>
+        <div class="panel">
+          <h2>Tracabilite</h2>
+          <div id="traceability-body"></div>
+        </div>
+      </div>
+
+      <div id="tab-data" class="tab-panel">
+        <div class="panel">
+          <h2>Donnees brutes</h2>
+          <p class="muted">Les donnees brutes proviennent d'un export Excel importe ci-dessous. Elles ne sont pas modifiables directement dans l'outil : pour les corriger, re-exportez le fichier source et importez-le a nouveau.</p>
+          <div class="toolbar">
+            <button class="btn" id="import-btn">Importer les donnees (Excel)</button>
+            <input type="file" id="import-file-input" accept=".xlsx,.xls" class="hidden">
+            <span id="data-source-info" class="muted"></span>
+          </div>
+          <div class="editable-table-wrap">
+            <table>
+              <thead id="data-thead"></thead>
+              <tbody id="data-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-procedure" class="tab-panel">
+        <div class="panel">
+          <h2>Procedure</h2>
+          <p class="muted">Toute activite dans la procedure (peu importe l'etape et la valeur) passe le controle en "En cours". Seule la signature (onglet Informations, boutons "Valider OK" / "Valider KO") determine le statut final.</p>
+          <div class="toolbar">
+            <button class="btn secondary small" id="add-step-btn">+ Etape</button>
+            <button class="btn secondary small" id="add-proc-col-btn">+ Colonne</button>
+            <button class="btn secondary small" id="del-proc-col-btn">- Colonne</button>
+          </div>
+          <div class="editable-table-wrap">
+            <table class="editable-table">
+              <thead id="proc-thead"></thead>
+              <tbody id="proc-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-contacts" class="tab-panel">
+        <div class="panel">
+          <h2>Personnes a contacter</h2>
+          <p class="muted">Qui contacter pour ce controle, et pour quoi faire.</p>
+          <div class="toolbar">
+            <button class="btn secondary small" id="add-contact-btn">+ Personne</button>
+          </div>
+          <div class="editable-table-wrap">
+            <table class="editable-table">
+              <thead><tr><th>Nom</th><th>Equipe / role</th><th>Email</th><th>Telephone</th><th>A propos de quoi</th><th></th></tr></thead>
+              <tbody id="contacts-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Mails types</h2>
+          <p class="muted">Modeles de mails a envoyer pour ce controle (quoi demander, a qui).</p>
+          <div class="toolbar">
+            <button class="btn secondary small" id="add-template-btn">+ Modele de mail</button>
+          </div>
+          <div id="templates-list"></div>
+        </div>
+      </div>
+
+      <div id="tab-sampling" class="tab-panel">
+        <div class="panel">
+          <h2>Echantillons selectionnes</h2>
+          <div class="toolbar">
+            <button class="btn" id="draw-samples-btn">Tirer les echantillons</button>
+            <span class="muted">Tirage aleatoire depuis les donnees brutes, base sur "Nb echantillons".</span>
+          </div>
+          <div class="editable-table-wrap">
+            <table class="editable-table">
+              <thead id="sample-thead"></thead>
+              <tbody id="sample-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-history" class="tab-panel">
+        <div class="panel">
+          <h2>Historique des periodes</h2>
+          <div class="editable-table-wrap">
+            <table>
+              <thead><tr><th>Periode</th><th>Statut</th><th>Conformite</th><th>Realise par</th><th>Validation</th><th></th></tr></thead>
+              <tbody id="history-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../static/js/api.js"></script>
+  <script src="../static/js/common.js"></script>
+  <script src="../static/js/layout.js"></script>
+  <script src="../static/js/control.js"></script>
+</body>
+</html>

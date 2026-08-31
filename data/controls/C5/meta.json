@@ -1,0 +1,20 @@
+{
+  "ref": "C5",
+  "nom": "Compliance Check",
+  "description": "Verification de conformite",
+  "contact": "Quantum",
+  "note": "macro OK",
+  "contacts": [],
+  "mail_templates": [
+    {
+      "titre": "Test",
+      "objet": "Test",
+      "corps": "Tetete"
+    },
+    {
+      "titre": "Nouveau modele",
+      "objet": "",
+      "corps": ""
+    }
+  ]
+}

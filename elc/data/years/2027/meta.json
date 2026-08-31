@@ -1,0 +1,94 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "nom": "1. Gouvernance / Intégrité"
+    },
+    {
+      "id": "2",
+      "nom": "2. Organisation / Pouvoirs / Procédures"
+    },
+    {
+      "id": "3",
+      "nom": "3. Management des risques"
+    },
+    {
+      "id": "4",
+      "nom": "4. Objectifs / Suivi de gestion"
+    },
+    {
+      "id": "5",
+      "nom": "5. Compta / Finance"
+    },
+    {
+      "id": "7",
+      "nom": "7. RH"
+    }
+  ],
+  "columns": [
+    {
+      "key": "elc_code",
+      "label": "N. ELC"
+    },
+    {
+      "key": "controle",
+      "label": "Controle"
+    },
+    {
+      "key": "document",
+      "label": "Document attendu"
+    },
+    {
+      "key": "team",
+      "label": "Equipe"
+    },
+    {
+      "key": "cac_transmission",
+      "label": "CAC transmission"
+    },
+    {
+      "key": "date_envoi_mail_cac",
+      "label": "Date envoi mail CAC"
+    },
+    {
+      "key": "a_presenter_sur_site",
+      "label": "A presenter sur site"
+    },
+    {
+      "key": "commentaire",
+      "label": "Commentaire"
+    },
+    {
+      "key": "statut",
+      "label": "Statut"
+    },
+    {
+      "key": "date_obtention",
+      "label": "Date obtention"
+    },
+    {
+      "key": "personne_suivi",
+      "label": "Personne chargee du suivi"
+    },
+    {
+      "key": "commentaires_cac_finale",
+      "label": "Commentaires CAC finale"
+    },
+    {
+      "key": "lien_fichier",
+      "label": "Lien fichier"
+    },
+    {
+      "key": "lien_racine",
+      "label": "Lien racine"
+    },
+    {
+      "key": "statut_2025",
+      "label": "Statut 2025"
+    },
+    {
+      "key": "commentaires_cac_2025",
+      "label": "Commentaires CAC 2025"
+    }
+  ]
+}

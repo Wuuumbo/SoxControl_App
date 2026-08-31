@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Connexion - Controles SOX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="login-body">
+  <div class="login-screen">
+    <div class="login-card">
+      <div class="login-brand" id="login-brand">
+        <img src="static/img/logo-totalenergies.png" alt="TotalEnergies" class="login-logo"
+             onerror="document.getElementById('login-brand').classList.add('logo-missing')">
+        <div class="login-brand-fallback">TotalEnergies</div>
+      </div>
+
+      <p class="login-tagline" id="login-tagline">Controle Interne - Tresorerie</p>
+
+      <div class="login-avatar" id="login-avatar">?</div>
+      <div class="login-name" id="login-name">Detection en cours...</div>
+      <div class="login-poste" id="login-poste"></div>
+
+      <p class="muted login-note">
+        Identite detectee automatiquement depuis votre session Windows : elle ne peut pas etre modifiee.
+      </p>
+
+      <button class="btn login-btn" id="connect-btn" disabled>Se connecter</button>
+    </div>
+  </div>
+
+  <script src="static/js/api.js"></script>
+  <script src="static/js/common.js"></script>
+  <script>
+    function initials(nom) {
+      const parts = (nom || "").trim().split(/\s+/).filter(Boolean);
+      if (!parts.length) return "?";
+      if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    }
+
+    async function initLogin() {
+      const [who, registry] = await Promise.all([
+        Api.get("/api/whoami"),
+        Api.get("/api/registry").catch(() => ({})),
+      ]);
+
+      document.getElementById("login-avatar").textContent = initials(who.display_name);
+      document.getElementById("login-name").textContent = who.display_name || "Utilisateur";
+      document.getElementById("login-poste").textContent = `N° de poste : ${who.computer || "-"}`;
+      if (registry.team) {
+        document.getElementById("login-tagline").textContent = registry.team;
+      }
+
+      const btn = document.getElementById("connect-btn");
+      btn.disabled = false;
+      btn.addEventListener("click", () => {
+        window.location.href = "sections.html";
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", initLogin);
+  </script>
+</body>
+</html>

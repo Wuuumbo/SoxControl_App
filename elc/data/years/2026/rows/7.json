@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "elc_code": "ELC58",
+      "controle": "Annual performance reviews",
+      "document": "7.58 Company communication on annual reviews completed in HR4U system - Fin d'année IC",
+      "team": "IC ",
+      "cac_transmission": null,
+      "date_envoi_mail_cac": null,
+      "a_presenter_sur_site": null,
+      "commentaire": "Attendre le mail entretien individuel en Octobre",
+      "statut": "En attente",
+      "date_obtention": null,
+      "personne_suivi": null,
+      "commentaires_cac_finale": null,
+      "lien_fichier": null,
+      "lien_racine": null,
+      "statut_2025": "Obtenu",
+      "commentaires_cac_2025": null
+    },
+    {
+      "elc_code": "ELC59",
+      "controle": "Training",
+      "document": "7.59.1 EIA - Fin d'année ",
+      "team": "IC ",
+      "cac_transmission": null,
+      "date_envoi_mail_cac": null,
+      "a_presenter_sur_site": null,
+      "commentaire": "Attendre le mail entretien individuel en Octobre",
+      "statut": "En attente",
+      "date_obtention": null,
+      "personne_suivi": null,
+      "commentaires_cac_finale": null,
+      "lien_fichier": null,
+      "lien_racine": null,
+      "statut_2025": "Obtenu",
+      "commentaires_cac_2025": null
+    },
+    {
+      "elc_code": "ELC59",
+      "controle": "Training",
+      "document": "7.59.2 Training requests - Registre des formations obligatoires Extraction de Lizzy par Vincent. ",
+      "team": "IC ",
+      "cac_transmission": null,
+      "date_envoi_mail_cac": null,
+      "a_presenter_sur_site": null,
+      "commentaire": "le doublon est visible sous quelle référence ELC ? Le registre des demandes Lizzy",
+      "statut": "En attente",
+      "date_obtention": null,
+      "personne_suivi": null,
+      "commentaires_cac_finale": null,
+      "lien_fichier": null,
+      "lien_racine": null,
+      "statut_2025": "Doublon",
+      "commentaires_cac_2025": null
+    }
+  ]
+}

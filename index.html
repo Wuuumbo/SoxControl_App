@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Tableau de bord - Controles SOX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main-col">
+      <header class="topheader" id="topheader"></header>
+
+      <main class="page-content">
+        <div class="page-head">
+          <h1>Tableau de bord</h1>
+          <p class="muted"><span id="team-name"></span> &middot; <span id="campaign-name"></span></p>
+        </div>
+
+        <div id="tiles" class="tiles"></div>
+
+        <div class="panel">
+          <div class="toolbar" style="margin-bottom:16px;">
+            <h2 style="margin:0;">Repartition des statuts sur l'annee</h2>
+            <div class="spacer"></div>
+            <select id="year-select"></select>
+          </div>
+          <div id="yearly-chart"></div>
+          <div class="legend" style="margin-top:8px;">
+            <span class="badge OK">OK</span>
+            <span class="badge KO">KO</span>
+            <span class="badge En-cours">En cours</span>
+            <span class="badge dash">Non demarre</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="toolbar" style="margin-bottom:16px;">
+            <h2 style="margin:0;">Controles</h2>
+            <div class="spacer"></div>
+            <div id="dash-save-indicator" class="save-indicator hidden"><span class="dot"></span> A jour</div>
+            <button class="btn secondary small" id="edit-controls-btn">&#9998; Modifier</button>
+          </div>
+          <div class="editable-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ref.</th>
+                  <th>Nom du controle</th>
+                  <th>Description</th>
+                  <th>Echantillons conformes</th>
+                  <th>Taux</th>
+                  <th>Statut</th>
+                  <th>Contact</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="controls-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="static/js/api.js"></script>
+  <script src="static/js/common.js"></script>
+  <script src="static/js/layout.js"></script>
+  <script src="static/js/dashboard.js"></script>
+</body>
+</html>

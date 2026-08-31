@@ -1,0 +1,473 @@
+{
+  "columns": [
+    {
+      "key": "id",
+      "label": "ID"
+    },
+    {
+      "key": "date_rapport",
+      "label": "Date Rapport"
+    },
+    {
+      "key": "run_for_date",
+      "label": "Run For Date"
+    },
+    {
+      "key": "affiliate",
+      "label": "Affiliate"
+    },
+    {
+      "key": "devise",
+      "label": "Devise"
+    },
+    {
+      "key": "limite_od",
+      "label": "Limite OD (M)"
+    },
+    {
+      "key": "utilisation",
+      "label": "Utilisation (M)"
+    },
+    {
+      "key": "depassement",
+      "label": "Depassement"
+    },
+    {
+      "key": "commentaire_eod",
+      "label": "Commentaire EoD"
+    },
+    {
+      "key": "valide_powerbi",
+      "label": "Valide Power BI"
+    }
+  ],
+  "rows": [
+    {
+      "id": "OD-001",
+      "date_rapport": "2026-07-21",
+      "run_for_date": "2026-07-20",
+      "affiliate": "TotalEnergies EP Congo",
+      "devise": "EUR",
+      "limite_od": 76.7,
+      "utilisation": 20.7,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-002",
+      "date_rapport": "2026-07-24",
+      "run_for_date": "2026-07-23",
+      "affiliate": "TotalEnergies EP Congo",
+      "devise": "GBP",
+      "limite_od": 76.7,
+      "utilisation": 46.1,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-003",
+      "date_rapport": "2026-07-02",
+      "run_for_date": "2026-07-01",
+      "affiliate": "TotalEnergies Gas & Power",
+      "devise": "EUR",
+      "limite_od": 29.7,
+      "utilisation": 16.6,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-004",
+      "date_rapport": "2026-07-18",
+      "run_for_date": "2026-07-17",
+      "affiliate": "TotalEnergies LNG Americas",
+      "devise": "GBP",
+      "limite_od": 68.5,
+      "utilisation": 41.1,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-005",
+      "date_rapport": "2026-07-15",
+      "run_for_date": "2026-07-14",
+      "affiliate": "TotalEnergies Battery France",
+      "devise": "USD",
+      "limite_od": 82.8,
+      "utilisation": 0.7,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-006",
+      "date_rapport": "2026-07-23",
+      "run_for_date": "2026-07-22",
+      "affiliate": "TotalEnergies E&P Angola",
+      "devise": "USD",
+      "limite_od": 35,
+      "utilisation": 8.4,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-007",
+      "date_rapport": "2026-07-04",
+      "run_for_date": "2026-07-03",
+      "affiliate": "TotalEnergies EP Congo",
+      "devise": "USD",
+      "limite_od": 18.7,
+      "utilisation": 17.4,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-008",
+      "date_rapport": "2026-07-26",
+      "run_for_date": "2026-07-25",
+      "affiliate": "TotalEnergies Gas & Power",
+      "devise": "GBP",
+      "limite_od": 51.3,
+      "utilisation": 7.1,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-009",
+      "date_rapport": "2026-07-03",
+      "run_for_date": "2026-07-02",
+      "affiliate": "TotalEnergies Downstream DE",
+      "devise": "USD",
+      "limite_od": 84.6,
+      "utilisation": 57.6,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-010",
+      "date_rapport": "2026-07-19",
+      "run_for_date": "2026-07-18",
+      "affiliate": "TotalEnergies LNG Americas",
+      "devise": "GBP",
+      "limite_od": 16.3,
+      "utilisation": 11.9,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-011",
+      "date_rapport": "2026-07-03",
+      "run_for_date": "2026-07-02",
+      "affiliate": "TotalEnergies Marketing France",
+      "devise": "EUR",
+      "limite_od": 88,
+      "utilisation": 36.9,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-012",
+      "date_rapport": "2026-07-21",
+      "run_for_date": "2026-07-20",
+      "affiliate": "TotalEnergies Marketing France",
+      "devise": "USD",
+      "limite_od": 24.6,
+      "utilisation": 9.7,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-013",
+      "date_rapport": "2026-07-23",
+      "run_for_date": "2026-07-22",
+      "affiliate": "TotalEnergies SE Nigeria",
+      "devise": "GBP",
+      "limite_od": 16.4,
+      "utilisation": 11.5,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-014",
+      "date_rapport": "2026-07-06",
+      "run_for_date": "2026-07-05",
+      "affiliate": "TotalEnergies Upstream UK",
+      "devise": "USD",
+      "limite_od": 34.3,
+      "utilisation": 34.9,
+      "depassement": "OUI",
+      "commentaire_eod": "Transfert interco en cours de traitement",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-015",
+      "date_rapport": "2026-07-27",
+      "run_for_date": "2026-07-26",
+      "affiliate": "TotalEnergies Lubricants SA",
+      "devise": "EUR",
+      "limite_od": 30.6,
+      "utilisation": 1.2,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-016",
+      "date_rapport": "2026-07-13",
+      "run_for_date": "2026-07-12",
+      "affiliate": "TotalEnergies Petrochemicals",
+      "devise": "EUR",
+      "limite_od": 29,
+      "utilisation": 30.1,
+      "depassement": "OUI",
+      "commentaire_eod": "Erreur de valorisation corrigee J+1",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-017",
+      "date_rapport": "2026-07-21",
+      "run_for_date": "2026-07-20",
+      "affiliate": "TotalEnergies Upstream UK",
+      "devise": "USD",
+      "limite_od": 89.6,
+      "utilisation": 63.4,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-018",
+      "date_rapport": "2026-07-09",
+      "run_for_date": "2026-07-08",
+      "affiliate": "TotalEnergies Refining SA",
+      "devise": "EUR",
+      "limite_od": 77,
+      "utilisation": 45.7,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-019",
+      "date_rapport": "2026-07-29",
+      "run_for_date": "2026-07-28",
+      "affiliate": "TotalEnergies Battery France",
+      "devise": "USD",
+      "limite_od": 42.6,
+      "utilisation": 46.7,
+      "depassement": "OUI",
+      "commentaire_eod": "Transfert interco en cours de traitement",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-020",
+      "date_rapport": "2026-07-03",
+      "run_for_date": "2026-07-02",
+      "affiliate": "TotalEnergies Lubricants SA",
+      "devise": "EUR",
+      "limite_od": 87.5,
+      "utilisation": 14.8,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-021",
+      "date_rapport": "2026-07-26",
+      "run_for_date": "2026-07-25",
+      "affiliate": "TotalEnergies SE Nigeria",
+      "devise": "USD",
+      "limite_od": 63.7,
+      "utilisation": 27,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-022",
+      "date_rapport": "2026-07-17",
+      "run_for_date": "2026-07-16",
+      "affiliate": "TotalEnergies Petrochemicals",
+      "devise": "GBP",
+      "limite_od": 87.5,
+      "utilisation": 1.2,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-023",
+      "date_rapport": "2026-07-22",
+      "run_for_date": "2026-07-21",
+      "affiliate": "TotalEnergies Downstream DE",
+      "devise": "USD",
+      "limite_od": 79.2,
+      "utilisation": 29.7,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-024",
+      "date_rapport": "2026-07-14",
+      "run_for_date": "2026-07-13",
+      "affiliate": "TotalEnergies Refining SA",
+      "devise": "USD",
+      "limite_od": 10.3,
+      "utilisation": 8.2,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-025",
+      "date_rapport": "2026-07-17",
+      "run_for_date": "2026-07-16",
+      "affiliate": "TotalEnergies Lubricants SA",
+      "devise": "EUR",
+      "limite_od": 55.7,
+      "utilisation": 6.6,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-026",
+      "date_rapport": "2026-07-27",
+      "run_for_date": "2026-07-26",
+      "affiliate": "TotalEnergies SE Nigeria",
+      "devise": "GBP",
+      "limite_od": 64.8,
+      "utilisation": 11,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-027",
+      "date_rapport": "2026-07-18",
+      "run_for_date": "2026-07-17",
+      "affiliate": "TotalEnergies Lubricants SA",
+      "devise": "GBP",
+      "limite_od": 92.7,
+      "utilisation": 61.1,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-028",
+      "date_rapport": "2026-07-01",
+      "run_for_date": "2026-06-30",
+      "affiliate": "TotalEnergies EP Congo",
+      "devise": "USD",
+      "limite_od": 89.1,
+      "utilisation": 81.5,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-029",
+      "date_rapport": "2026-07-08",
+      "run_for_date": "2026-07-07",
+      "affiliate": "TotalEnergies Gas & Power",
+      "devise": "EUR",
+      "limite_od": 89,
+      "utilisation": 92.7,
+      "depassement": "OUI",
+      "commentaire_eod": "Depassement temporaire autorise par tresorier",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-030",
+      "date_rapport": "2026-07-27",
+      "run_for_date": "2026-07-26",
+      "affiliate": "TotalEnergies EP Congo",
+      "devise": "GBP",
+      "limite_od": 78.9,
+      "utilisation": 11.2,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-031",
+      "date_rapport": "2026-07-31",
+      "run_for_date": "2026-07-30",
+      "affiliate": "TotalEnergies Downstream DE",
+      "devise": "EUR",
+      "limite_od": 33.9,
+      "utilisation": 32.5,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-032",
+      "date_rapport": "2026-07-31",
+      "run_for_date": "2026-07-30",
+      "affiliate": "TotalEnergies LNG Americas",
+      "devise": "GBP",
+      "limite_od": 78,
+      "utilisation": 59.2,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-033",
+      "date_rapport": "2026-07-13",
+      "run_for_date": "2026-07-12",
+      "affiliate": "TotalEnergies SE Nigeria",
+      "devise": "GBP",
+      "limite_od": 43.6,
+      "utilisation": 43.2,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "NON"
+    },
+    {
+      "id": "OD-034",
+      "date_rapport": "2026-07-04",
+      "run_for_date": "2026-07-03",
+      "affiliate": "TotalEnergies LNG Americas",
+      "devise": "EUR",
+      "limite_od": 15.8,
+      "utilisation": 0.5,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    },
+    {
+      "id": "OD-035",
+      "date_rapport": "2026-07-19",
+      "run_for_date": "2026-07-18",
+      "affiliate": "TotalEnergies LNG Americas",
+      "devise": "EUR",
+      "limite_od": 16.4,
+      "utilisation": 11.4,
+      "depassement": "NON",
+      "commentaire_eod": "RAS",
+      "valide_powerbi": "OUI"
+    }
+  ],
+  "source_filename": "SOX_Controls_Workbook_2 FINAL.xlsm",
+  "imported_at": "2026-08-28T11:32:45",
+  "imported_by": {
+    "display_name": "Import initial (ancien classeur Excel)",
+    "username": null,
+    "computer": null
+  }
+}

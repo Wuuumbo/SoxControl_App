@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>ELC - Tableau de bord</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main-col">
+      <header class="topheader" id="topheader"></header>
+
+      <main class="page-content">
+        <div class="page-head">
+          <h1>Tableau de bord ELC</h1>
+          <p class="muted">Entity Level Controls - Campagne SOX</p>
+        </div>
+
+        <div id="tiles" class="tiles"></div>
+
+        <div class="elc-dash-grid">
+          <div class="panel">
+            <div class="toolbar">
+              <h2 style="margin:0;">Progression par bloc</h2>
+              <div class="spacer"></div>
+              <button class="btn secondary small" id="add-cat-btn">+ Nouveau bloc</button>
+            </div>
+            <div id="cat-cards" class="elc-cat-grid"></div>
+          </div>
+
+          <div class="elc-dash-side">
+            <div class="panel">
+              <h2>Repartition par statut</h2>
+              <div id="statut-bars"></div>
+            </div>
+            <div class="panel">
+              <h2>Par equipe</h2>
+              <div class="elc-table-wrap">
+                <table class="elc-table">
+                  <thead><tr><th>Equipe</th><th>Total</th><th>Obtenu</th><th>Taux</th></tr></thead>
+                  <tbody id="equipe-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div id="add-cat-modal" class="modal-backdrop hidden">
+    <div class="modal narrow">
+      <h3>Nouveau bloc</h3>
+      <div class="field-row">
+        <label>Nom du bloc</label>
+        <input type="text" id="add-cat-input" placeholder="ex. 8. Nouveau domaine">
+      </div>
+      <div class="modal-actions">
+        <button class="btn secondary" id="add-cat-cancel">Annuler</button>
+        <button class="btn" id="add-cat-confirm">Creer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/js/api.js"></script>
+  <script src="../static/js/common.js"></script>
+  <script src="../static/js/elc-layout.js"></script>
+  <script src="../static/js/elc-common.js"></script>
+  <script src="../static/js/elc-dashboard.js"></script>
+</body>
+</html>
